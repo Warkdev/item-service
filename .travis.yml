@@ -1,0 +1,18 @@
+language: java
+dist: precise
+addons:
+  mariadb: '10.0'
+jdk:
+  - openjdk13
+install: True
+before_script:
+  - sudo mysql --user root < /home/travis/build/Warkdev/item-service/scripts/database/structure.sql
+  - sudo mysql --user root auth < /home/travis/build/Warkdev/item-service/scripts/database/data.sql
+  - unset _JAVA_OPTIONS
+  - chmod +x scripts/travisTest.sh
+  - mv scripts/liberty src/main
+script:
+  - scripts/travisTest.sh
+branches:
+  only:
+    - main
