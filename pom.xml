@@ -26,7 +26,7 @@
         <jakarta.version>8.0.0</jakarta.version>
         <javaee.version>8.0.1</javaee.version>
         <!-- Microprofile -->
-        <mp.version>3.3</mp.version>
+        <mp.version>4.0.1</mp.version>
         <!-- JAX RS Client -->
         <jaxrs-client.version>3.3.6</jaxrs-client.version>
         <!-- JSON -->
