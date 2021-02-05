@@ -21,7 +21,7 @@
         <mariadb.version>2.7.0</mariadb.version>
         <mariadb.path>${user.home}/.m2/repository/org/mariadb/jdbc/mariadb-java-client</mariadb.path>
         <!-- JUnit -->
-        <junit.version>5.6.2</junit.version>
+        <junit.version>5.7.1</junit.version>
         <!-- Jakarta -->
         <jakarta.version>8.0.0</jakarta.version>
         <javaee.version>8.0.1</javaee.version>
